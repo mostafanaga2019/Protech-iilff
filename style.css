@@ -5535,6 +5535,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 .mychat{
     position: fixed;
     z-index: 1111;
+    top: 50px;
 }
 .chatbot {
   display: none;
