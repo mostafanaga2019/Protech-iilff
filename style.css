@@ -141,8 +141,7 @@ ul { list-style: disc; }
 ol { list-style: decimal; }
 li > ul,
 li > ol { margin-bottom: 0; }
-ul li,
-ol li { padding: 0.1em 0; }
+
 dl,
 dd { margin: 0 0 20px; }
 dt { font-weight: bold; }
@@ -1651,6 +1650,7 @@ a.worktype:hover{
     width: 240px;
     background-color: red;
     color: #fff;
+    height: 100%;
     
 }
 
@@ -1881,8 +1881,8 @@ a.worktype:hover{
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px
+    margin-top: 5px;
+    margin-bottom: 5px
 }
 .switch-button input[type="checkbox"] {
     display:block;
@@ -4239,6 +4239,7 @@ form .input-flex h6{
     display: flex;
     overflow: hidden;
     flex-direction: row-reverse;
+    zoom:0.75
 }
 .sign-container > div div.left-box, .sign-container > div div.right-box{
     width: 600px;
@@ -4468,7 +4469,10 @@ form .input-flex h6{
 .rev_slider .themesflat-button.has-icon.white .icon { border-color: rgba(153,153,153,0.3); }
 
 /* Clearfix */
-.clearfix { *zoom: 1; clear: both; }
+.container{
+    zoom:.8;
+}
+.clearfix { zoom: 1; clear: both; }
 .clearfix:before,
 .clearfix:after,
 .themesflat-container:before,
@@ -4900,7 +4904,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 #main-nav { display: block; }
 #main-nav ul li { position: relative; list-style: none; }
 #main-nav > ul > li { float: left;}
-#main-nav > ul > li > a {display: block;font-family: "cairo";font-weight: 700;font-size: 18px;color: #343434;}
+#main-nav > ul > li > a {display: block;font-family: "cairo";font-weight: 700;letter-spacing: 0;color: #343434;}
 #main-nav > ul > li > a:hover,
 #main-nav > ul > li.current-menu-item > a {color: #f14635;}
 #main-nav > ul > li > a:before {content: "";width: 0%;height: 3px;background-color: #f14635;position: absolute;bottom: 0;left: 0;transition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;}
@@ -5231,6 +5235,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
     margin: 0 auto;
     justify-content: space-between;
     direction: rtl;
+    height: 80%;
 }
 .tp-caption{
     right: 50px
