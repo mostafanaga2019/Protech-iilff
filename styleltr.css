@@ -811,6 +811,12 @@ h6 a { color: inherit }
     display: none;
 }
 
+.mainlogo{
+        width: 50px;
+        height: 50px;
+        display: block; 
+    }
+
 .empty-page{
     display: flex;
     justify-content: center;
@@ -2985,6 +2991,22 @@ img.mySlides{
      color: #37405a;
     font-weight: 600;
     font-size: 18px;
+}
+.pay-terms span p{
+    position: absolute;
+    top: -35px;
+    right: 50%;
+    width: 200px;
+    transform: translate(50%,0);    
+    background-color: #333;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    border-radius: 5px;
+}
+.pay-terms span:hover p{
+    display: block;
 }
 .price-id span{
     color: #f14635;
@@ -5460,7 +5482,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 #bottom.style-2 .bottom-bar-menu li:first-child a { padding-left: 0; }
 
 /* Copy Right */
-#bottom #copyright { font-size: 12px; font-family: "cairo"; font-weight: 600; letter-spacing: 0px;  }
+#bottom #copyright { font-size: 18px; font-family: "cairo"; font-weight: 600; letter-spacing: 0px;  }
 #bottom #copyright a { color: #ffffff; }
 #bottom #copyright a:hover { color: #999999; }
 
@@ -6321,6 +6343,10 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
    .menulogo{
     width: 40px;
     display: block;
+    }
+    .mainlogo{
+       
+        display: none; 
     }
     
     .form-responsive{
