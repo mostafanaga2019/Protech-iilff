@@ -3001,6 +3001,7 @@ img.mySlides{
 }
 .pay-terms{
     justify-content: space-around;
+    flex-wrap: wrap;    
    
 }
 
@@ -3011,6 +3012,7 @@ img.mySlides{
     font-weight: 600;
     position: relative;
     cursor: default;
+    margin: 10px 30px;
 }
 .pay-terms span::before{
     content: url(assets/img/icons/approved.png);
@@ -3018,11 +3020,34 @@ img.mySlides{
     right: -27px;
     top: 3px;
 }
+.pay-terms.info-terms span::after{    
+    content:"\f05a";
+    font-family:'FontAwesome';
+    position: absolute;
+    left: -27px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #37405a;
+    transition: all 0.5s
+    
+}
+.pay-terms.info-terms span:hover::after{    
+    content:"\f05a";
+    font-family:'FontAwesome';
+    position: absolute;
+    left: -25px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fbe200
+    
+}
 .pay-terms span p{
     position: absolute;
     top: -35px;
     right: 50%;
-    width: 200px;
+    width: 320px;
     transform: translate(50%,0);    
     background-color: #333;
     padding: 8px;
@@ -3033,6 +3058,7 @@ img.mySlides{
 }
 .pay-terms span:hover p{
     display: block;
+    z-index: 1111
 }
 
 .pay-terms.cutomer-badges{

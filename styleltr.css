@@ -2996,12 +2996,13 @@ img.mySlides{
      color: #37405a;
     font-weight: 600;
     font-size: 18px;
+    
 }
 .pay-terms span p{
     position: absolute;
     top: -35px;
     right: 50%;
-    width: 200px;
+    width: 320px;
     transform: translate(50%,0);    
     background-color: #333;
     padding: 8px;
@@ -3012,6 +3013,7 @@ img.mySlides{
 }
 .pay-terms span:hover p{
     display: block;
+    z-index: 1111111
 }
 .price-id span{
     color: #f14635;
@@ -3041,7 +3043,7 @@ img.mySlides{
 }
 .pay-terms{
     justify-content: space-around;
-   
+    flex-wrap: wrap;
 }
 
 
@@ -3051,15 +3053,40 @@ img.mySlides{
     font-weight: 600;
     position: relative;
     cursor: default;
+    margin:10px 30px;
 }
 .pay-terms span::before{
     content: url(assets/img/icons/approved.png);
     position: absolute;
-    right: -27px;
+    left: -27px;
     top: 3px;
 }
-.pay-terms.cutomer-badges{
+.pay-terms.info-terms span::after{    
+    content:"\f05a";
+    font-family:'FontAwesome';
+    position: absolute;
+    right: -27px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #37405a;
+    transition: all 0.5s
     
+}
+.pay-terms.info-terms span:hover::after{    
+    content:"\f05a";
+    font-family:'FontAwesome';
+    position: absolute;
+    right: -25px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fbe200
+    
+}
+
+
+.pay-terms.cutomer-badges{    
     flex-wrap: wrap;
     justify-content: space-around;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
